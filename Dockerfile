@@ -1,6 +1,6 @@
-FROM node:alpine
+FROM node:8.3-alpine
 
-RUN apk add --no-cache git && \
+RUN apk add --no-cache git docker && \
     npm install -g bower grunt-cli less && \
     echo '{ "allow_root": true }' > /root/.bowerrc && \
     mkdir -p /.config && \
