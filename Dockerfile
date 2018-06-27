@@ -1,4 +1,4 @@
-FROM node:8.3-alpine
+FROM node:8.11-alpine
 
 RUN apk add --no-cache git docker && \
     npm install -g bower grunt-cli less && \
